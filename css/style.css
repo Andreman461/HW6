@@ -1,0 +1,76 @@
+/*div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+div {
+  position: absolute;
+  inset: 0;
+}*/
+body {
+	display: block;
+	width: 1400px;
+	height: 2000px;
+}
+header {
+    position: relative;
+    background: url('../img/background2.png') no repeat;
+    z-index: 0;
+    height: 500px;
+}
+header:after {
+    position: absolute;
+    background-color: red;
+    z-index: -1;
+}
+.test1 {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	color: white;
+}
+#test1-1 {
+	position: relative;
+    top: 40px; left: 40px;
+	background-color: blue;
+}
+#test1-2 {
+	position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+#test1-3 {
+	position: absolute;
+	inset: 10px 15px 20px;
+}
+.test2 {
+	width: 500px;
+	height: 300px;
+	overflow: scroll;
+	margin: 150px;
+}
+.test2_1 {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	color: white;
+}
+#test2_1_1 {
+	position: fixed;
+	top: 80;
+    left: 10;
+}
+dt {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  margin: 1em 0;
+}
